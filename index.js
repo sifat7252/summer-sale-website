@@ -1,5 +1,7 @@
 // console.log('js file added');
 
+// function for added list item and get total prize items
+
 let total = 0;
 
 function clickCard(target){
@@ -13,9 +15,9 @@ function clickCard(target){
     selectedField.appendChild (li);
 
     const itemPrize = target.childNodes[5].childNodes[3].childNodes[1].innerText;
-    // console.log(itemPrize);
+    
     const previousTotalPrize = document.getElementById('total-prize').innerText;
-    // console.log(typeof previousTotalPrize)
+    
     
 
     total = parseFloat(previousTotalPrize) + parseFloat(itemPrize);
@@ -29,8 +31,8 @@ function clickCard(target){
     const currentTotalPaymentBalance = total;
     totalPaymentBalance.innerText = currentTotalPaymentBalance;
 
-    // disable or enable make purchase button 
-    console.log(total)
+    // disable or enable make purchase button function 
+    
     const makePurchaseButton = document.getElementById('make-purchase-btn')
 
     if (total > 1){
@@ -43,6 +45,7 @@ function clickCard(target){
 
 
 // validation of coupon and up to 200 tk sell
+
 document.getElementById('coupon-field').addEventListener('keyup', function(event){
 
     
@@ -66,7 +69,7 @@ document.getElementById('coupon-field').addEventListener('keyup', function(event
 
 // click apply button for discounted prize
 document.getElementById('apply-btn').addEventListener('click', function(prize){
-    // console.log('apply button clicked')
+    
     const previousTotalPrize = document.getElementById('total-prize').innerText;
     
     const TotalPrize = parseFloat(previousTotalPrize)
@@ -81,10 +84,7 @@ document.getElementById('apply-btn').addEventListener('click', function(prize){
 
     // calculation total prize and discount prize 
     let finalDiscountPrize = discountPrize.innerText;
-    
-    console.log(finalDiscountPrize);
-
-    
+        
     const totalPaymentBalance = document.getElementById('total-payment');
     const previousTotalBalanceString = totalPaymentBalance.innerText;
     const previousTotalBalance = parseFloat(previousTotalBalanceString);
@@ -98,9 +98,11 @@ document.getElementById('apply-btn').addEventListener('click', function(prize){
 
 // make purchase button functions modal set
 
-document.getElementById('make-purchase-btn').addEventListener('click', function(){
-    console.log('make purchase button clicked')
 
-})
+let goHomeBtn = document.getElementById('go-home-btn');
+function reloadPage(){
+    location.reload();
+}
+goHomeBtn.addEventListener('click', reloadPage);
 
 

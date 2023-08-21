@@ -11,12 +11,7 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        
-         
-
-        
-    </style>
+    <style></style>
   </head>
   <body class="font-sans">
     <header>
@@ -43,22 +38,23 @@
               Use Promo Code
             </h5>
             <button
-              class="rounded-lg bg-pink-500 text-white font-sans font-semibold text-center text-2xl py-3 px-5" id="promo-code"
+              class="rounded-lg bg-pink-500 text-white font-sans font-semibold text-center text-2xl py-3 px-5"
+              id="promo-code"
             >
               SELL200
             </button>
           </div>
         </div>
         <div class="image-container flex-1">
-          <img src="/images/Summer 1.png" alt="" />
+          <img src="./images/Summer 1.png" alt="" />
         </div>
       </section>
       <!-- banner section finished -->
     </header>
     <main class="bg-slate-100 pt-16 px-20">
-        <!-- card section started from here -->
+      <!-- card section started from here -->
 
-        <!-- card section1 started -->
+      <!-- card section1 started -->
 
       <section class="card-section1">
         <div
@@ -71,9 +67,16 @@
           <div class="card1-container w-9/12 grid grid-cols-3 gap-6" id="">
             <!-- card 1 -->
 
-            <div class="card w-auto bg-base-100 shadow-xl py-5 px-5 " onclick="clickCard(this)">
-              <figure class="px-10 py-10 m-5 rounded-lg bg-slate-100 ">
-                <img src="/images/prod1.png" alt="prod1" class="rounded-xl w-24 h-28" />
+            <div
+              class="card w-auto bg-base-100 shadow-xl py-5 px-5"
+              onclick="clickCard(this)"
+            >
+              <figure class="px-10 py-10 m-5 rounded-lg bg-slate-100">
+                <img
+                  src="./images/prod1.png"
+                  alt="prod1"
+                  class="rounded-xl w-24 h-28"
+                />
               </figure>
               <div class="rating justify-center">
                 <input
@@ -105,7 +108,8 @@
               </div>
               <div class="card-body items-center text-center">
                 <h2
-                  class="card-title text-black text-xl font-sans font-semibold" id="card1-item"
+                  class="card-title text-black text-xl font-sans font-semibold"
+                  id="card1-item"
                 >
                   K. Accessories
                 </h2>
@@ -120,9 +124,16 @@
 
             <!-- card 2 started -->
 
-            <div class="card w-auto bg-base-100 shadow-xl py-5 px-5" onclick="clickCard(this)">
+            <div
+              class="card w-auto bg-base-100 shadow-xl py-5 px-5"
+              onclick="clickCard(this)"
+            >
               <figure class="px-10 py-10 m-5 rounded-lg bg-slate-100">
-                <img src="/images/prod2.png" alt="prod2" class="rounded-xl w-24 h-28" />
+                <img
+                  src="./images/prod2.png"
+                  alt="prod2"
+                  class="rounded-xl w-24 h-28"
+                />
               </figure>
               <div class="rating justify-center">
                 <input
@@ -154,7 +165,7 @@
               </div>
               <div class="card-body items-center text-center">
                 <h2
-                  class="card-title text-black text-xl font-sans font-semibold" 
+                  class="card-title text-black text-xl font-sans font-semibold"
                 >
                   Cutter Items
                 </h2>
@@ -169,9 +180,16 @@
 
             <!-- card 3 started -->
 
-            <div class="card w-auto bg-base-100 shadow-xl py-5 px-5" onclick="clickCard(this)">
+            <div
+              class="card w-auto bg-base-100 shadow-xl py-5 px-5"
+              onclick="clickCard(this)"
+            >
               <figure class="px-10 py-10 m-5 rounded-lg bg-slate-100">
-                <img src="/images/prod3.png" alt="prod3" class="rounded-xl w-24 h-28" />
+                <img
+                  src="./images/prod3.png"
+                  alt="prod3"
+                  class="rounded-xl w-24 h-28"
+                />
               </figure>
               <div class="rating justify-center">
                 <input
@@ -209,7 +227,8 @@
                 </h2>
 
                 <p
-                  class="card1-prize text-slate-700 text-xl font-sans font-normal" id="card1-item"
+                  class="card1-prize text-slate-700 text-xl font-sans font-normal"
+                  id="card1-item"
                 >
                   <span id="prize">49.00</span>TK
                 </p>
@@ -219,17 +238,23 @@
 
           <!-- right side container started -->
 
-          <div class="right-side-container w-3/12 h-auto bg-slate-50 py-6 px-6 rounded-lg shadow-xl">
+          <div
+            class="right-side-container w-3/12 h-auto bg-slate-50 py-6 px-6 rounded-lg shadow-xl"
+          >
             <div class="coupon-container mb-8">
               <h3 class="text-black text-2xl font-medium">Have Coupon?</h3>
               <div class="flex items-center rounded-lg w-full h-11 mt-4 pr-3">
                 <input
                   type="text"
-                  class=" justify-center items-center my-3 border pl-2 h-11 w-40"
+                  class="justify-center items-center my-3 border pl-2 h-11 w-40"
                   id="coupon-field"
                   placeholder="Coupon code"
                 />
-                <button class="btn bg-pink-500 text-center text-lg font-semibold text-white" id="apply-btn" disabled >
+                <button
+                  class="btn bg-pink-500 text-center text-lg font-semibold text-white"
+                  id="apply-btn"
+                  disabled
+                >
                   Apply
                 </button>
               </div>
@@ -245,18 +270,41 @@
                 id="prize-box"
               >
                 <h4>
-                  Total Prize : <span id="total-prize" class="text-slate-700">00</span>.00 TK
+                  Total Prize :
+                  <span id="total-prize" class="text-slate-700">00</span>.00 TK
                 </h4>
-                <h4>Discount : <span id="discount-area" class="text-slate-700">00.00</span> TK</h4>
-                <h4>Total Payment : <span id="total-payment" class="text-slate-700">00.00</span> TK</h4>
+                <h4>
+                  Discount :
+                  <span id="discount-area" class="text-slate-700">00.00</span>
+                  TK
+                </h4>
+                <h4>
+                  Total Payment :
+                  <span id="total-payment" class="text-slate-700">00.00</span>
+                  TK
+                </h4>
                 <hr class="mt-5" />
-                <button class="btn mt-5 text-white bg-pink-500 text-xl font-semibold flex text-center justify-center items-center" disabled id="make-purchase-btn">
+               
+                <!-- adding a modal when clicked make purchase button -->
+                
+                <button class="btn mt-5 text-white bg-pink-500 text-xl font-semibold flex text-center justify-center items-center " disabled id="make-purchase-btn" onclick="my_modal_1.showModal()">
                   Make Purchase
                 </button>
+                <dialog id="my_modal_1" class="modal ">
+                  <form method="dialog" class="modal-box justify-center items-center">
+                    <img src="./images/congo.png" alt="congo.png" class="flex items-center">
+                    <h3 class="text-black text-center text-5xl font-bold">Congratulations</h3>
+                    <h5 class="text-slate-400 text-center text-xl font-normal mt-3">Thanks for purchase </h5>
+                    
+                    <div class="modal-action">
+                
+                      <button class="btn hover:none items-center bg-pink-500 text-white" id="go-home-btn">Go Home</button>
+                    </div>
+                  </form>
+                </dialog>
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -266,7 +314,7 @@
 
       <section class="card-section2 mt-14">
         <div
-          class="card2-tittle text-black text-4xl font-sans font-semibold mb-8" 
+          class="card2-tittle text-black text-4xl font-sans font-semibold mb-8"
           id=""
         >
           Sportswear
@@ -275,9 +323,16 @@
           <div class="card2-container w-9/12 grid grid-cols-3 gap-6" id="">
             <!-- card 1 -->
 
-            <div class="card w-auto bg-base-100 shadow-xl py-5 px-5" onclick="clickCard(this)">
-              <figure class="px-10 py-10 m-5 rounded-lg bg-slate-100 ">
-                <img src="/images/prod4.png" alt="prod4" class="rounded-xl w-24 h-28" />
+            <div
+              class="card w-auto bg-base-100 shadow-xl py-5 px-5"
+              onclick="clickCard(this)"
+            >
+              <figure class="px-10 py-10 m-5 rounded-lg bg-slate-100">
+                <img
+                  src="./images/prod4.png"
+                  alt="prod4"
+                  class="rounded-xl w-24 h-28"
+                />
               </figure>
               <div class="rating justify-center">
                 <input
@@ -324,9 +379,16 @@
 
             <!-- card 2 started -->
 
-            <div class="card w-auto bg-base-100 shadow-xl py-5 px-5 " onclick="clickCard(this)">
+            <div
+              class="card w-auto bg-base-100 shadow-xl py-5 px-5"
+              onclick="clickCard(this)"
+            >
               <figure class="px-10 py-10 m-5 rounded-lg bg-slate-100">
-                <img src="/images/prod5.png" alt="prod5" class="rounded-xl w-24 h-28" />
+                <img
+                  src="./images/prod5.png"
+                  alt="prod5"
+                  class="rounded-xl w-24 h-28"
+                />
               </figure>
               <div class="rating justify-center">
                 <input
@@ -373,9 +435,16 @@
 
             <!-- card 3 started -->
 
-            <div class="card w-auto bg-base-100 shadow-xl py-5 px-5" onclick="clickCard(this)">
+            <div
+              class="card w-auto bg-base-100 shadow-xl py-5 px-5"
+              onclick="clickCard(this)"
+            >
               <figure class="px-10 py-10 m-5 rounded-lg bg-slate-100">
-                <img src="/images/prod6.png" alt="prod6" class="rounded-xl w-24 h-28" />
+                <img
+                  src="./images/prod6.png"
+                  alt="prod6"
+                  class="rounded-xl w-24 h-28"
+                />
               </figure>
               <div class="rating justify-center">
                 <input
@@ -420,8 +489,6 @@
               </div>
             </div>
           </div>
-          
-
         </div>
       </section>
 
@@ -440,9 +507,16 @@
           <div class="card3-container w-9/12 grid grid-cols-3 gap-6" id="">
             <!-- card 1 -->
 
-            <div class="card w-auto bg-base-100 shadow-xl py-5 px-5" onclick="clickCard(this)">
-              <figure class="px-10 py-10 m-5 rounded-lg bg-slate-100 ">
-                <img src="/images/prod7.png" alt="prod7" class="rounded-xl w-24 h-28" />
+            <div
+              class="card w-auto bg-base-100 shadow-xl py-5 px-5"
+              onclick="clickCard(this)"
+            >
+              <figure class="px-10 py-10 m-5 rounded-lg bg-slate-100">
+                <img
+                  src="./images/prod7.png"
+                  alt="prod7"
+                  class="rounded-xl w-24 h-28"
+                />
               </figure>
               <div class="rating justify-center">
                 <input
@@ -489,9 +563,16 @@
 
             <!-- card 2 started -->
 
-            <div class="card w-auto bg-base-100 shadow-xl py-5 px-5" onclick="clickCard(this)">
+            <div
+              class="card w-auto bg-base-100 shadow-xl py-5 px-5"
+              onclick="clickCard(this)"
+            >
               <figure class="px-10 py-10 m-5 rounded-lg bg-slate-100">
-                <img src="/images/prod8.png" alt="prod8" class="rounded-xl w-24 h-28" />
+                <img
+                  src="./images/prod8.png"
+                  alt="prod8"
+                  class="rounded-xl w-24 h-28"
+                />
               </figure>
               <div class="rating justify-center">
                 <input
@@ -538,9 +619,16 @@
 
             <!-- card 3 started -->
 
-            <div class="card w-auto bg-base-100 shadow-xl py-5 px-5" onclick="clickCard(this)">
+            <div
+              class="card w-auto bg-base-100 shadow-xl py-5 px-5"
+              onclick="clickCard(this)"
+            >
               <figure class="px-10 py-10 m-5 rounded-lg bg-slate-100">
-                <img src="/images/prod9.png" alt="prod9" class="rounded-xl w-24 h-28" />
+                <img
+                  src="./images/prod9.png"
+                  alt="prod9"
+                  class="rounded-xl w-24 h-28"
+                />
               </figure>
               <div class="rating justify-center">
                 <input
@@ -585,8 +673,6 @@
               </div>
             </div>
           </div>
-          
-          
         </div>
       </section>
     </main>
