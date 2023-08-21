@@ -17,28 +17,30 @@ function clickCard(target){
     const previousTotalPrize = document.getElementById('total-prize').innerText;
     // console.log(typeof previousTotalPrize)
     
-    // total = parseFloat(total) + parseFloat(itemPrize);
+
     total = parseFloat(previousTotalPrize) + parseFloat(itemPrize);
     
     document.getElementById('total-prize').innerText = total; 
-    // console.log(total)
-    // const totalPrize = total;
-    // const totalPaymentString = document.getElementById('total-payment').innerText;
-    // console.log(totalPaymentString);
-    // console.log(typeof totalPaymentString)
-    // const totalPayment = parseFloat(totalPaymentString);
-    // console.log(totalPayment);
-    // console.log(typeof totalPayment);
-    // const prize = total.appendChild(total)
-    // return ;
+    
     const totalPaymentBalance = document.getElementById('total-payment');
     const previousTotalBalanceString = totalPaymentBalance.innerText;
     const previousTotalBalance = parseFloat(previousTotalBalanceString);
 
     const currentTotalPaymentBalance = total;
     totalPaymentBalance.innerText = currentTotalPaymentBalance;
+
+    // disable or enable make purchase button 
+    console.log(total)
+    const makePurchaseButton = document.getElementById('make-purchase-btn')
+
+    if (total > 1){
+        makePurchaseButton.removeAttribute('disabled');
+    }
+    else{
+        makePurchaseButton.setAttribute('disabled', true);
+    }
 }
-// console.log(total);
+
 
 // validation of coupon and up to 200 tk sell
 document.getElementById('coupon-field').addEventListener('keyup', function(event){
@@ -82,17 +84,7 @@ document.getElementById('apply-btn').addEventListener('click', function(prize){
     
     console.log(finalDiscountPrize);
 
-    // const finalTotalPrize = TotalPrize - 
-    // let totalPaymentString = document.getElementById('total-payment').innerText;
-    // let totalPayment = parseFloat(totalPaymentString);
-    // console.log(totalPayment);
-
-    // console.log(typeof totalPayment);
-    // let calculationTotalPayment = TotalPrize - finalDiscountPrize;
-    // console.log(calculationTotalPayment);
-    // console.log(typeof calculationTotalPayment);
-    // totalPayment.innerText = calculationTotalPayment;
-    // console.log(totalPayment);
+    
     const totalPaymentBalance = document.getElementById('total-payment');
     const previousTotalBalanceString = totalPaymentBalance.innerText;
     const previousTotalBalance = parseFloat(previousTotalBalanceString);
@@ -104,19 +96,11 @@ document.getElementById('apply-btn').addEventListener('click', function(prize){
     
 }) 
 
-// // make purchase button functions modal set
-// document.getElementById('make-purchase-btn').addEventListener('click', function(){
-    
-// <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-//   <form method="dialog" className="modal-box">
-    
-//     <h3 className="font-bold text-lg">Hello!</h3>
-//     <p className="py-4">Press ESC key or click the button below to close</p>
-//     <div className="modal-action">
-//       <button className="btn">Close</button>
-//     </div>
-//   </form>
-// </dialog>
-// })
+// make purchase button functions modal set
+
+document.getElementById('make-purchase-btn').addEventListener('click', function(){
+    console.log('make purchase button clicked')
+
+})
 
 
